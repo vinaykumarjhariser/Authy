@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }))
 const port = 3000;
-const authy = require('authy')('C8q5z2KCtdC8Voi5x9SpnXGtaTMovLxf');
+const authy = require('authy')('Api_key');
 
 app.post('/signup', async (req, res) => {
     const email = req.body.email;
